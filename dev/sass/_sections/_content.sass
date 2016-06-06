@@ -1,0 +1,209 @@
+.content-container
+	box-sizing: border-box
+.content
+	padding: 20px 25px
+	
+	box-sizing: border-box
+.tab-wrapper
+	margin-right: 20px
+	margin-bottom: -1px
+	@include clearfix()
+.related-content
+	background-color: white
+	box-sizing: border-box
+	// width: 100%
+	max-width: 940px
+	border: 1px solid #dedede
+	border-radius: 6px
+	padding: 15px 15px 0 15px
+	margin-bottom: 15px
+	display: none
+	&-wrapper
+		// white-space: nowrap
+		box-sizing: border-box
+	&__label
+		display: block
+		float: right
+		border: 1px solid #dedede
+		border-radius: 3px 3px 0 0
+		line-height: 35px
+		padding: 0 23px
+		background-color: #eeeeee
+		margin-left: 1px
+		font-weight: 700
+		color: #666666
+		font-size: 13px
+		&:hover
+			cursor: pointer
+	&__img-wrapper
+		max-width: 181px
+		
+		float: left
+		&__relative-wrapper
+			position: relative
+	&__list
+		float: right
+		display: block
+		max-width: 275px
+		list-style-type: square
+		list-style-position: outside
+	&__img-ul-wrapper
+		@include clearfix()
+		margin-bottom: 20px
+	&__header
+		background-image: url('../images/Annual_DP_Report_2013_header_LP.png')
+		background-repeat: no-repeat
+		width: 100%
+		min-height: 150px
+		max-width: 908px
+		// margin-top: 16px
+		margin: 0 auto 25px auto
+	&__inner
+		width: 100%
+		max-width: 910px
+		margin: 0 auto
+		@include clearfix()
+		padding-bottom: 20px
+	&__description
+		max-width: 510px
+		float: left
+		color: #444444
+		width: 100%
+		&__text
+			line-height: 33px
+			margin-bottom: 10px
+			display: block
+			font-size: 14px
+	&__gallery
+		max-width: 385px
+		margin-top: 10px
+		@include clearfix()
+	&__image
+		border: 1px solid #dedede
+.label_active
+	background-color: white
+	border-bottom: 1px solid #fff
+	color: #444444
+.header-inscription
+	color: white
+	font-size: 23px
+	// width: 85%
+	padding-top: 50px
+	margin-bottom: 7px
+	text-align: center
+	&__yellow
+		color: #ffec00
+		margin-left: 10px
+.header-subscription
+	color: white
+	font-size: 16px
+	// width: 85%
+	font-weight: 400
+	text-align: center
+.h1-heading
+	font-size: 14px
+	margin-top: 15px
+	margin-bottom: 15px
+.h2-heading
+	font-size: 13px
+	margin-top: 10px
+	margin-bottom: 10px
+.list-item
+	list-style-type: square
+	list-style-position: outside
+	line-height: 19px
+	font-size: 12px
+.look-button
+	position: absolute
+	bottom: -15px
+	width: 143px
+	height: 64px
+	background: url('../images/look-button.png') no-repeat
+.gallery
+	margin-bottom: 15px
+	&__img-left
+		float: left
+	&__img-right
+		float: right
+.full-info-link
+	font-size: 12px
+.footer
+	width: 100%
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	padding: 20px 25px
+	margin-top: 60px
+	max-width: 990px
+	box-sizing: border-box
+	&__lists
+		@include clearfix()
+		margin-bottom: 25px
+.footer-list
+	float: left
+	&__item
+		display: inline-block
+		&:before
+			content: "|"
+			margin: 0 7px
+		&:first-child:before 
+			display: none
+	&__link
+		color: #747474
+		font-size: 12px
+		&:hover
+			color: #747474
+			text-decoration: underline
+.socials-list
+	float: right
+	&__item
+		display: inline-block
+		margin-left: 12px
+.text-hide
+	position: absolute
+	left: -99999px
+.twitter
+	background-image: url('../images/sprite.png')
+	height: $twitter-height
+	width: $twitter-width
+	display: block
+	background-position: $twitter-offset-x $twitter-offset-y
+.inshare
+	background-image: url('../images/sprite.png')
+	height: $inshare-height
+	width: $inshare-width
+	display: block
+	background-position: $inshare-offset-x $inshare-offset-y
+.google
+	background-image: url('../images/sprite.png')
+	height: $googleplus-height
+	width: $googleplus-width
+	display: block
+	background-position: $googleplus-offset-x $googleplus-offset-y
+.facebook
+	background-image: url('../images/sprite.png')
+	height: $facebook-height
+	width: $facebook-width
+	display: block
+	background-position: $facebook-offset-x $facebook-offset-y
+.copyright
+	color: #747474
+	display: block
+	text-align: center
+	font-size: 12px
+.display-block
+	display: block
+.display-none
+	display: none
+.no-marker
+	list-style-type: none
+	position: relative
+	left: -10px
+	margin-bottom: 10px
+.plain-text
+	font-size: 12px
+.bold
+	font-weight: 600
+
+

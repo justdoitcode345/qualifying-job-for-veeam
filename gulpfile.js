@@ -18,6 +18,7 @@ var gulp         = require('gulp'),
     clean        = require('gulp-rimraf'),
     imagemin     = require('gulp-imagemin'),
     plumber      = require('gulp-plumber'),
+    babel        = require('gulp-babel'),
     notify       = require('gulp-notify');
 
 /* --------- paths --------- */
@@ -29,7 +30,7 @@ var paths = {
   },
 
   js: {
-    src: 'dev/js/**/*.js',
+    src: 'dev/js/**/*.+(js|jsx)',
     plug: 'dev/plugins/**/*.js',
     destination: 'prod/js'
   },
@@ -47,7 +48,7 @@ gulp.task('server', function () {
     server: {
       baseDir: ["dev", "prod"]
     },
-    // proxy: "localhost:8888",
+    // proxy: "localhost:3332",
     notify: false
   });
 });
@@ -81,6 +82,9 @@ gulp.task('concat-js', function () {
   return gulp.src(paths.js.src)
     .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     .pipe(sourcemaps.init())
+    .pipe(babel({
+      presets: ['es2015']
+    }))
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(sourcemaps.write())
@@ -102,7 +106,10 @@ gulp.task('concat-js-plugins', function() {
 
 /* -------- concat js plugins (head) -------- */
 gulp.task('concat-js-plugins-head', function() {
-  return gulp.src('./dev/plugins/modernizr-custom.js')
+  return gulp.src([
+    './dev/plugins/modernizr-custom.js',
+    './dev/plugins/lite-modal.js'
+    ])
     .pipe(plumber())
     .pipe(concat('plugins-head.min.js'))
     .pipe(uglify())

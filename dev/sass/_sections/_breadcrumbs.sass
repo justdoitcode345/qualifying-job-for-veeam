@@ -1,0 +1,36 @@
+.breadcrumbs-container
+	background-image: url('../images/breadcrumbs-gradient.png')
+	background-repeat: repeat-x
+	box-shadow:  0 3px 3px -3px #777
+	max-width: $container-width
+	width: 100%
+	margin: 0 auto
+	z-index: 9999
+.breadcrumb
+ 	display: inline-block
+ 	&:before
+ 		content: ">>"
+ 		margin: 0 15px 0 15px
+ 		color: black
+ 		font-weight: 900
+ 		font-size: 8px
+ 	&__link
+ 		position: relative
+ 		top: 1px
+ 		line-height: 34px
+ 		color: white
+ 		padding-top: 10px
+ 		font-size: 12px
+ 		&:hover
+ 			color: white
+ 			text-decoration: underline
+ 		&:visited
+ 			color: white
+ 		&_last
+ 			font-weight: 600
+.breadcrumb:first-child:before
+	display: none
+.breadcrumbs
+ 	margin-left: 32px
+
+ 

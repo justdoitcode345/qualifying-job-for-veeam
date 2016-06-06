@@ -1,0 +1,105 @@
+.content-container
+	.content
+		.related-content-wrapper
+			.tab-wrapper
+				input.related-content__tab(type='radio' id='tab_1' checked)
+				label.related-content__label.label_active(for='tab_1') SMB Edition
+				input.related-content__tab(type='radio' id='tab_2')
+				label.related-content__label(for='tab_2') Enterprise Edition
+			.related-content
+				.related-content__header
+					h1.header-inscription Annual Data Protection Report 2013:
+						span.header-inscription__yellow Enterprise and SMB Editions
+					h2.header-subscription Survey of 500 enterprises and 500 small / medium businesses across USA, UK, Germany and France
+				.related-content__inner
+					.related-content__description
+						h1.h1-heading SMB Edition
+						h1.h1-heading 85% of SMB's Experiencing Problems with Backup and Recovery
+						h2.h2-heading Report shows 55% will change backup tool by 2014
+						span.related-content__description__text Veeam reveals the findings of the recent SMB data protection survey:
+						.related-content__img-ul-wrapper
+							.related-content__img-wrapper
+								.related-content__img-wrapper__relative-wrapper
+									img.related-content__image(src="./images/annual-smb-report.jpg", alt="Annual SMB report")
+									a.look-button(href="/")
+							ul.related-content__list
+								li.list-item 85% of SMBs are experiencing cost-related challenges with backup and recovery, 83% with capability and 80% with complexity
+								li.list-item 67% of the virtual environment is backed-up meaning that almost a third of SMBs’ virtual infrastructure is unprotected
+								li.list-item More than 1 in 6 (17%) recoveries of backed-up machines cause problems
+								li.list-item 41% of SMBs stated that downtime in the event of an IT failure costs $150,000 or more per hour
+						h2.h2-heading Infographics - SMB challenges with data protection in brief
+						.related-content__gallery
+							.gallery__img-left
+								img.gallery__img(src="./images/smb_ingographics_web_preview_1_cut.png", alt="")
+							.gallery__img-right
+								img.gallery__img(src="./images/smb_ingographics_web_preview_2_cut.png", alt="")
+						a.full-info-link(href="")	Click to view the full size infographics
+					.related-content__form-wrapper
+						form.related-content__form(id="register-form")
+							p.form-heading Register here
+							.form-list-wrapper
+								ul.form-list
+									li.form-item
+										label.form-label.required(for="first-name") First name
+										input.form-input(form="register-form" name="" type="text" id="first-name")
+									li.form-item
+										label.form-label.required(for="last-name") Last Name
+										input.form-input(form="register-form" name="" type="text" id="last-name")
+									li.form-item
+										label.form-label.required(for="email") Business email
+										input.form-input(form="register-form" name="" type="text" id="email")
+									li.form-item
+										label.form-label.required(for="company") Company
+										input.form-input(form="register-form" name="" type="text" id="company")
+									li.form-item
+										label.form-label.required(for="select-job") Job Title
+										select.form-select(form="register-form" name="" value="" id="select-job")
+											option.select-option(value="Select job description" disabled selected) Select job description
+											option.select-option(value="Job Title 1") Job Title 1
+											option.select-option(value="Job Title 2") Job Title 2
+											option.select-option(value="Job Title 3") Job Title 3
+											option.select-option(value="Job Title 4") Job Title 4
+									li.form-item
+										label.form-label.required(for="select-country") Country
+										select.form-select(form="register-form" name="" id="select-country")
+											option.select-option(value="United States") United States
+											option.select-option(value="Russia") Russia
+											option.select-option(value="Canada") Canada
+											option.select-option(value="Brazil") Brazil
+											option.select-option(value="UK") UK
+									li.form-item
+										label.form-label(for="select-state") State
+										select.form-select(form="register-form" name="" value="" id="select-state")
+											option.select-option(value="Select State" disabled selected) Select State
+											option.select-option(value="Alabama") Alabama
+											option.select-option(value="Alaska") Alaska
+											option.select-option(value="Arizona") Arizona
+											option.select-option(value="Arkansas") Arkansas
+											option.select-option(value="California") California
+								button.form-button Register
+		.footer
+			.footer__lists
+				ul.footer-list
+					li.footer-list__item
+						a.footer-list__link(href="") White Papers
+					li.footer-list__item
+						a.footer-list__link(href="") Virtualization Webinars
+					li.footer-list__item
+						a.footer-list__link(href="") Product Demos
+					li.footer-list__item
+						a.footer-list__link(href="") Contact Sales
+				ul.socials-list
+					li.socials-list__item
+						a.social-list__link.twitter(href="/") 
+							span.text-hide twitter
+					li.socials-list__item
+						a.social-list__link.inshare(href="/") 
+							span.text-hide inshare
+					li.socials-list__item
+						a.social-list__link.google(href="/") 
+							span.text-hide google+
+					li.socials-list__item
+						a.social-list__link.facebook(href="/") 
+							span.text-hide facebook
+			span.copyright Copyright © 2015 Veeam® Software.
+				a.copyright__link(href="/") Privacy policy
