@@ -1,0 +1,43 @@
+.related-content__form-wrapper
+	form.related-content__form(id="register-form")
+		p.form-heading Register here
+		.form-list-wrapper
+			ul.form-list
+				li.form-item
+					label.form-label.required(for="first-name") First name
+					input.form-input(form="register-form" name="" type="text" id="first-name")
+				li.form-item
+					label.form-label.required(for="last-name") Last Name
+					input.form-input(form="register-form" name="" type="text" id="last-name")
+				li.form-item
+					label.form-label.required(for="email") Business email
+					input.form-input(form="register-form" name="" type="text" id="email")
+				li.form-item
+					label.form-label.required(for="company") Company
+					input.form-input(form="register-form" name="" type="text" id="company")
+				li.form-item
+					label.form-label.required(for="select-job") Job Title
+					select.form-select(form="register-form" name="" value="" id="select-job")
+						option.select-option(value="Select job description" disabled selected) Select job description
+						option.select-option(value="Job Title 1") Job Title 1
+						option.select-option(value="Job Title 2") Job Title 2
+						option.select-option(value="Job Title 3") Job Title 3
+						option.select-option(value="Job Title 4") Job Title 4
+				li.form-item
+					label.form-label.required(for="select-country") Country
+					select.form-select(form="register-form" name="" id="select-country")
+						option.select-option(value="United States") United States
+						option.select-option(value="Russia") Russia
+						option.select-option(value="Canada") Canada
+						option.select-option(value="Brazil") Brazil
+						option.select-option(value="UK") UK
+				li.form-item
+					label.form-label(for="select-state") State
+					select.form-select(form="register-form" name="" value="" id="select-state")
+						option.select-option(value="Select State" disabled selected) Select State
+						option.select-option(value="Alabama") Alabama
+						option.select-option(value="Alaska") Alaska
+						option.select-option(value="Arizona") Arizona
+						option.select-option(value="Arkansas") Arkansas
+						option.select-option(value="California") California
+			button.form-button Register

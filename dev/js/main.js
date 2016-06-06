@@ -34,7 +34,7 @@ window.onload = function() {
 	function tabclick(e) {
 		var el = e ? e.target : window.event.srcElement;
 		if (el.tagName == "LABEL" && !el.classList.contains('label_active')) {
-			arr(document.querySelectorAll(".related-content")).forEach(function (element) {
+			arr(document.querySelectorAll(".related-content__description")).forEach(function (element) {
 				
 				if (element.classList.contains(el.id) && !hasClass(element, "display-block"))  { 
 					

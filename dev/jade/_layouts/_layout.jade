@@ -31,9 +31,16 @@ html(lang='ru')
 							.tab-wrapper
 								label.related-content__label.label_active(id='SMB') SMB Edition
 								label.related-content__label(id='enterprise') Enterprise Edition
-							include ../_sections/_related-content-smb
-							include ../_sections/_related-content-enterprise
+							.related-content
+								.related-content__header
+									h1.header-inscription Annual Data Protection Report 2013:
+										span.header-inscription__yellow Enterprise and SMB Editions
+									h2.header-subscription Survey of 500 enterprises and 500 small / medium businesses across USA, UK, Germany and France
+								.related-content__inner
+									include ../_sections/_related-content-smb
+									include ../_sections/_related-content-enterprise
+									include ../_sections/_form
 							include ../_sections/_popup-video
-						include ../_common/_footer
+				include ../_common/_footer
 		script(src='js/plugins.min.js')
 		script(src='js/main.min.js')
